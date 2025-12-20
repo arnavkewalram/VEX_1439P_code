@@ -252,7 +252,7 @@ void odom_drive_example() {
   // This works the same as pid_drive_set, but it uses odom instead!
   // You can replace pid_drive_set with pid_odom_set and your robot will
   // have better error correction.
-  gps1.set_position(-1.2192, -1.2192, 0);  // Set GPS position to -48, -24, 0
+  // gps1.set_position(-1.2192, -1.2192, 0);  // Set GPS position to -48, -24, 0
 
   chassis.odom_xy_set(-48_in, -48_in);  // Reset odom position to 0, 0
   //pros::delay(1000);  // Wait a second before the next motion
@@ -440,7 +440,7 @@ void gps_example() {
 
 
 void localization_test(){
-gps1.set_position( 0.0254 * -24, 0.0254 * -48, 0);  // Set GPS position to -48, -24, 0
+// gps1.set_position( 0.0254 * -24, 0.0254 * -48, 0);  // Set GPS position to -48, -24, 0
 
 chassis.odom_xy_set(-24_in, -48_in);  // Reset odom position to 0, 0
   //pros::delay(1000);  // Wait a second before the next motion
@@ -454,6 +454,6 @@ chassis.odom_xy_set(-24_in, -48_in);  // Reset odom position to 0, 0
   // callgps();
 }
 
-void route_1(){
-
+void swp_left_red() {
+  
 }
